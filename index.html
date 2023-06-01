@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="FaveIcon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <header>
+        <img src="Logo.png" class="logo" alt="Logo">
+        <nav class="navigasi">
+            <a href="#">Beranda</a>
+            <a href="#">Tentang</a>
+            <a href="#">Layanan</a>
+            <a href="#">Kontak</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <!-- End Navigasi -->
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <!-- Login -->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Ingatkan saya</label>
+                    <a href="#">Lupa Password</a>
+                </div>
+                <button type="submit" class="btn">Masuk</button>
+                <div class="login-register">
+                    <p>Belum punya akun?<a 
+                    href="#" class="register-link">Daftar</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- End Login -->
+        <!-- Register -->
+        <div class="form-box register">
+            <h2>Registrasi</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">saya setuju dengan syarat & ketentuan</label>
+                </div>
+                <button type="submit" class="btn">Daftar</button>
+                <div class="login-register">
+                    <p>sudah punya akun?<a 
+                    href="#" class="login-link">Masuk</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- End Register-->
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
